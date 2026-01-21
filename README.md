@@ -13,7 +13,7 @@ This project builds a Machine Learning pipeline to predict whether a patient has
 - `requirements.txt`: List of dependencies.
 - `diabetes_pipeline.pkl`: The saved trained model pipeline.
 
-## 1. Data Preprocessing
+## Data Preprocessing
 As per Task 2, the following 5 distinct preprocessing steps were applied:
 1.  **Duplicate Removal:** Dropped duplicate rows to ensure data quality.
 2.  **Zero Handling:** Replaced invalid `0` values in columns like `Glucose`, `BloodPressure`, and `BMI` with `NaN`.
@@ -21,12 +21,15 @@ As per Task 2, the following 5 distinct preprocessing steps were applied:
 4.  **Imputation:** Used `SimpleImputer(strategy='median')` within the pipeline to fill missing values.
 5.  **Scaling:** Applied `StandardScaler` to normalize feature distributions.
 
-## 2. Model Selection & Tuning
+## Model Selection & Tuning
 - **Primary Model:** Random Forest Classifier was selected for its robustness to outliers and ability to model non-linear relationships better than logistic regression.
 - **Cross-Validation:** 5-Fold Stratified CV was used to report the average ROC-AUC score.
 - **Hyperparameter Tuning:** `RandomizedSearchCV` was used to optimize `n_estimators`, `max_depth`, and `min_samples_split`.
 
-## 3. Performance
+## Performance
 The final model achieved the following metrics on the test set:
 - **Accuracy:** ~75%
 - **ROC-AUC:** ~0.84
+
+## Deployment Link
+Live Demo: https://huggingface.co/spaces/sayeedmini/Diabetes_Prediction
