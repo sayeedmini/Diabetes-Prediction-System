@@ -28,7 +28,7 @@ As per Task 2, the following 5 distinct preprocessing steps were applied:
 
 ## 3. Performance
 The final model achieved the following metrics on the test set:
-- **Accuracy:** ~76% (varies slightly by run)
+- **Accuracy:** ~75%
 - **ROC-AUC:** ~0.84
 
 ## 4. How to Run Locally
