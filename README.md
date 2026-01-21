@@ -30,8 +30,3 @@ As per Task 2, the following 5 distinct preprocessing steps were applied:
 The final model achieved the following metrics on the test set:
 - **Accuracy:** ~75%
 - **ROC-AUC:** ~0.84
-
-## 4. How to Run Locally
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
